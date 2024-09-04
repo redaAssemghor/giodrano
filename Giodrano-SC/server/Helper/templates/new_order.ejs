@@ -1,0 +1,26 @@
+<%- include('./includes/header.ejs') %>
+    <div style="display: flex; justify-content: center; align-items: flex-start;background-color: #F2F2F2;width: 100%;">
+        <div style="width: 400px; background-color: white;padding: 1rem;">
+            <p style="font-family: Helvetica, sans-serif;">Une nouvelle commande a été demandée
+            </p>
+            <p style="font-family: Helvetica, sans-serif;">Numéro de commande:
+            </p>
+            <div style="font-family: Helvetica, sans-serif;
+        height: 54px;
+        border-radius: 18px;
+        cursor: default; background-color: #F2F2F2;
+        border: 1px solid #B3B3B3;
+        color: black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;">
+                <h1>
+                    <%= code %>
+                </h1>
+            </div>
+            <h4 style="font-family: Helvetica, sans-serif;margin-bottom: 0">Equipe de Giordano</h4>
+        </div>
+    </div>
+    <%- include('./includes/footer.ejs') %>

@@ -1,0 +1,114 @@
+.logo, .user, .cart, .user-16, .cart-16, .user-connected, .arrow, .list, .list-compact, .trash, .trash-16, .edit, .edit-16, .warning-24,
+.success-24,
+.warning,
+.success, .mobile, .map, .facebook, .instagram, .menu-tog {
+    /* margin: .5rem; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.user, .cart, .user-connected, .list, .list-compact, .trash, .edit, .warning-24,
+.success-24 {
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.user-16, .cart-16, .trash-16, .edit-16, .warning,
+.success {
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.arrow {
+    min-width: 12px;
+    min-height: 12px;
+}
+
+.logo {
+    min-width: 150px;
+    min-height: 30px;
+}
+
+.trash, .trash-16 {
+    background-image: url(../images/icons/bin.svg);
+}
+
+.edit, .edit-16 {
+    background-image: url(../images/icons/edit.svg);
+}
+
+.list {
+    background-image: url(../images/icons/list.svg);
+}
+
+.list-compact {
+    background-image: url(../images/icons/list-compact.svg);
+}
+
+.arrow {
+    background-image: url(../images/icons/arrow.svg);
+}
+
+.user-connected {
+    background-image: url(../images/icons/user-connected.svg);
+}
+
+.user, .user-16 {
+    background-image: url(../images/icons/user.svg);
+}
+
+.cart, .cart-16 {
+    background-image: url(../images/icons/cart.svg);
+}
+
+.logo {
+    position: relative;
+    background-image: url(../images/images/GIO.png);
+}
+
+.warning, .warning-24 {
+    background-image: url(../images/icons/warning.svg);
+}
+
+.success, .success-24 {
+    background-image: url(../images/icons/success.svg);
+}
+
+.mobile, .map, .facebook, .instagram, .menu-tog {
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.mobile {
+    background-image: url(../images/icons/mobile.svg);
+}
+
+.map {
+    background-image: url(../images/icons/map.svg);
+}
+
+.facebook {
+    background-image: url(../images/icons/facebook.svg);
+}
+
+.instagram {
+    background-image: url(../images/icons/instagram.svg);
+}
+
+.menu-tog {
+    display: none;
+    background-image: url(../images/icons/menu-tog.svg);
+}
+
+
+.logo:after {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    content: "DZ";
+    transform: translateX(100%);
+    font-size: .75rem;
+}

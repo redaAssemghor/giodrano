@@ -1,0 +1,39 @@
+@media screen and (max-width: 1040px) {
+    html {
+        font-size: 14px;
+    
+    }
+    
+    .menu-tog {
+        display: block;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .logo {
+        min-width: 110px;
+        min-height: 20px;
+    }
+
+    .menu-mobile {
+        display: flex;
+    }
+  
+    
+}
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 12px;
+    
+    }
+    .categories-container .bg-img {
+        width: 100px;
+    }
+    .categories-container {
+  
+        row-gap: 16px;
+        column-gap: 16px;
+    }
+}

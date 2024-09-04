@@ -1,0 +1,111 @@
+.navbar {
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* color: #cdecf5 */
+}
+
+.side-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: top left;
+    text-transform: uppercase;
+    font-size: 3rem;
+    background-color: var(--black-transparent);
+    color: var(--white);
+    padding: .5rem 2rem;
+    /* border-bottom-right-radius: var(--border-r-32); */
+    border-bottom-left-radius: var(--border-r-32);
+}
+
+.categories-container {
+    width: min(100%,900px);
+    row-gap: 32px;
+    column-gap: 32px;
+}
+
+.categories-container .bg-img {
+    width: 200px;
+}
+
+.fixed-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    z-index: 900;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.771);
+    backdrop-filter: grayscale(100%) blur(10px);
+    opacity: 0;
+    animation: fadeout .5s ease-in-out forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.fixed-container section {
+    opacity: 0;
+    animation: fade-n-slide-down .2s ease-in-out .4s forwards;
+}
+
+.navbar-category-section {
+    position: fixed;
+    left: 0;
+    top: 75px;
+    z-index: 99;
+    opacity: 0;
+    animation: fade-n-slide-down .2s ease-in-out forwards;
+
+}
+
+.navbar-category-section .container {
+    /* height: 35vh; */
+    background: rgba(255, 255, 255, 0.771);
+    backdrop-filter: grayscale(100%) blur(10px);
+}
+
+.user-navbar-link:hover {
+    background-color: var(--dim-gray);
+}
+
+.animated-logo {
+    animation: rotate-in-place 2s ease-in-out infinite;
+
+}
+
+.loading-dots div:nth-child(1) {
+    animation: flash .5s alternate-reverse infinite;
+}
+
+.loading-dots div:nth-child(2) {
+    animation: flash .5s alternate-reverse .1s infinite;
+}
+
+.loading-dots div:nth-child(3) {
+    animation: flash .5s alternate-reverse .2s infinite;
+}
+
+.not-dot {
+    position: relative;
+}
+
+.not-dot::after {
+    content: "";
+    right: -5px;
+    top: 0;
+    position: absolute;
+    min-width: 15px;
+    min-height: 15px;
+    background-color: var(--red-main);
+    border-radius: var(--border-r-50);
+}
+
+.menu-mobile {
+    display: none;
+}
